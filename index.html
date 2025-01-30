@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>IP Address Tracker</title>
+  
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="ip.css">
+</head>
+<body>
+  <main class="container">
+    <h1>IP Address Tracker</h1>
+    
+    <div class="search-container">
+      <input 
+        type="text" 
+        class="search-input" 
+        placeholder="Search for any IP address or domain"
+      >
+      <button class="search-button" aria-label="Search">
+        <img src="./images/icon-arrow.svg" alt="Search">
+      </button>
+    </div>
+
+    <div class="results-card">
+      <div class="info-item">
+        <h2 class="info-label">IP Address</h2>
+        <p class="info-value" id="ip">-</p>
+      </div>
+
+      <div class="info-item">
+        <h2 class="info-label">Location</h2>
+        <p class="info-value" id="location">-</p>
+      </div>
+
+      <div class="info-item">
+        <h2 class="info-label">Timezone</h2>
+        <p class="info-value" id="timezone">-</p>
+      </div>
+
+      <div class="info-item">
+        <h2 class="info-label">ISP</h2>
+        <p class="info-value" id="isp">-</p>
+      </div>
+    </div>
+  </main>
+
+  <div id="map"></div>
+
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Michael</a>.
+  </footer>
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <!-- Custom JS -->
+  <script src="ip.js"></script>
+</body>
+</html>
