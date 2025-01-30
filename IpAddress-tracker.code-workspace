@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../../Desktop/ip-address-tracker-master/images"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "IpAddress-tracker"
+	}
+}
